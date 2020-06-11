@@ -1,0 +1,12 @@
+<%= form_for [@travel_service] do |f| %>
+      <%= f.label :author %>
+      <%= f.text_field :author %>
+      <br>
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+      <br>
+      <%= f.label :place %>
+      <%= f.text_area :place %>
+ 
+      <p><%= f.submit %></p>
+    <% end %>

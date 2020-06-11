@@ -8,3 +8,5 @@
       <% else %>
       <p> There are no places to display at this time <p>
       <% end %>
+
+       <%= will_paginate @places, renderer: BootstrapPagination::Rails
