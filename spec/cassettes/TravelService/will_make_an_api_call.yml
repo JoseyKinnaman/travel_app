@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://travel-api-rails.herokuapp.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 10 Jun 2020 20:20:46 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ca32adc75710bf89569c027b0f78fcd3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7e1be115-ed02-4272-9f39-6b44e32b633e
+      X-Runtime:
+      - '0.032974'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1,"content":"Deep v vinegar ennui. You probably haven''t heard
+        of them church-key narwhal pbr\u0026b.","author":"Cy Kosis","place":"Paraguay"},{"id":2,"content":"Irony
+        carry helvetica tote bag ethical heirloom. Chia drinking ugh. Cold-pressed
+        flexitarian polaroid pork belly goth raw denim readymade kickstarter. Pbr\u0026b
+        master kinfolk cardigan lo-fi.","author":"Kitty Katz","place":"Malawi"},{"id":3,"content":"Viral
+        portland direct trade mlkshk tote bag. Twee sriracha pop-up stumptown beard
+        raw denim ethical. Dreamcatcher tote bag heirloom direct trade.","author":"Rick
+        Shaw","place":"Sri Lanka"},{"id":4,"content":"Bitters diy gluten-free loko
+        flexitarian. You probably haven''t heard of them readymade xoxo asymmetrical
+        beard narwhal. Hashtag cardigan kale chips lomo chartreuse everyday. Carry
+        swag poutine kickstarter try-hard craft beer hoodie.","author":"Joy Anna DeLight","place":"Greece"},{"id":5,"content":"Typewriter
+        iphone street kickstarter readymade. Synth bitters authentic put a bird on
+        it vinegar lomo banjo. Everyday brooklyn kinfolk ramps retro.","author":"Marty
+        Graw","place":"Libyan Arab Jamahiriya"},{"id":6,"content":"Migas trust fund
+        pinterest pour-over brunch venmo cardigan. Forage cleanse dreamcatcher umami.
+        Selfies disrupt kogi.","author":"Duane Pipe","place":"Greece"},{"id":7,"content":"Tofu
+        authentic chillwave pug 8-bit. Lumbersexual kinfolk waistcoat freegan ramps
+        aesthetic meh park.","author":"Dinah Soares","place":"Christmas Island"},{"id":8,"content":"Lumbersexual
+        austin synth drinking distillery portland tote bag. Trust fund blog you probably
+        haven''t heard of them cold-pressed put a bird on it.","author":"Walt Smedley","place":"Algeria"},{"id":9,"content":"Synth
+        keytar bushwick hashtag. Pbr\u0026b 8-bit twee meggings beard muggle magic.
+        Keffiyeh shoreditch williamsburg wayfarers try-hard iphone thundercats sartorial.
+        Trust fund squid tumblr health messenger bag.","author":"Ferris Wheeler","place":"Madagascar"},{"id":10,"content":"Etsy
+        biodiesel artisan sustainable. Ugh pop-up thundercats hoodie cleanse. Authentic
+        butcher sustainable. Butcher blog artisan +1.","author":"Rufus Leaking","place":"Falkland
+        Islands (Malvinas)"}]'
+  recorded_at: Wed, 10 Jun 2020 20:20:48 GMT
+recorded_with: VCR 6.0.0

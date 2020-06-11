@@ -1,0 +1,26 @@
+<%= render "layouts/errors", :object => @comment %>
+
+<%= form_for [@comment] do |f| %>
+      <%= f.label :author %>
+      <%= f.text_field :author %>
+      <br>
+      <%= f.label :comment %>
+      <%= f.text_area :comment %>
+      <br>
+      <%= f.label :rating %>  
+      <%= f.label :rating, "1" %>
+      <%= f.radio_button(:rating, "1") %> 
+      <%= f.label :rating, "2" %>
+      <%= f.radio_button(:rating, "2") %> 
+      <%= f.label :rating, "3" %>
+      <%= f.radio_button(:rating, "3") %> 
+      <%= f.label :rating, "4" %>
+      <%= f.radio_button(:rating, "4") %> 
+      <%= f.label :rating, "5" %>
+      <%= f.radio_button(:rating, "5") %> 
+      <br>
+      <%= f.label :review_photo %>
+      <%= f.file_field :review_photo%>
+      <br>
+      <p><%= f.submit %></p>
+    <% end %>

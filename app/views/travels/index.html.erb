@@ -1,0 +1,10 @@
+  <h1>Places to Visit:</h1>
+      <% if @places.any? %>
+      <ul>
+        <% @places.each do |p| %>
+          <li><%= link_to p['place'], travel_path(p["id"]) %></li>
+      <% end %>
+      </ul>
+      <% else %>
+      <p> There are no places to display at this time <p>
+      <% end %>

@@ -1,18 +1,21 @@
 class CommentsController < ApplicationController
-before_action :authenticate_user!, :only => [:new]
-   before_action :only => [:edit, :destroy, :update] do
+    before_action :authenticate_user!, :only => [:new]
+    before_action :only => [:edit, :destroy, :update] do
     redirect_to new_user_session_path unless current_user && current_user.admin
+   end
 
-  def home 
-    render :home
-  end
+  # def home 
+  #   @places = TravelService.get_place()
+  #   render :home
+  # end
 
-  def index
-    @comments = Comment.all 
-    render :index
-  end
+  # def index
+  #   @comments = Comment.all 
+  #   render :index
+  # end
 
   def new
+    @places = TravelService.get_place()
     @comment = Comment.new
     render :new
   end
